@@ -1,2 +1,2 @@
-# magang_UnderwaterLife
-tugas magangKelompok
+# game-magang
+magang

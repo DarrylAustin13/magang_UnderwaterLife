@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 4.5f;
+    public float speed = 6f + SeaLevelRise.MorePower;
 
     // Update is called once per frame
     private void Update()

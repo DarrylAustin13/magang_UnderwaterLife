@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timertext;
-    public static float remainingTime;
+    private float remainingTime;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        remainingTime = SeaLevelRise.MoreTime;
     }
 
     // Update is called once per frame
