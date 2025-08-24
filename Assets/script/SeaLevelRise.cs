@@ -8,7 +8,7 @@ using TMPro;
 public class SeaLevelRise : MonoBehaviour
 {
     public Text SeaLevelText;
-    int SeaLevel = 1;
+    private static int SeaLevel = 1;
     public Text DayNum;
     public static int Day = 1;
     public static int money = 10000;
@@ -75,6 +75,7 @@ public class SeaLevelRise : MonoBehaviour
             MoreTime += 10;
             money -= moneyTimerUpgrade;
             moneyTimerUpgrade += 5000;
+            MoneyAmount.text = "Rp " + money;
             MoneyToProLong.text = "Rp " + moneyTimerUpgrade;
         }
         
@@ -87,6 +88,7 @@ public class SeaLevelRise : MonoBehaviour
             MorePower += 1.5f ;
             money -= moneyPowerUpgrade;
             moneyPowerUpgrade += 5000;
+            MoneyAmount.text = "Rp " + money;
             MoneyToMorePower.text = "Rp " + moneyPowerUpgrade;
         }
     }
@@ -95,6 +97,7 @@ public class SeaLevelRise : MonoBehaviour
     {
         string SeaDiving = "Diving Lv " + SeaLevel;
         SceneManager.LoadScene(SeaDiving);
+        HarpoonScriptChange.shoot = false;
     }
 
 }
