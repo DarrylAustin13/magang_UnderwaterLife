@@ -85,7 +85,7 @@ public class SeaLevelRise : MonoBehaviour
     {
         if(money >= moneyPowerUpgrade)
         {
-            MorePower += 1.5f ;
+            MorePower += 3f ;
             money -= moneyPowerUpgrade;
             moneyPowerUpgrade += 5000;
             MoneyAmount.text = "Rp " + money;
